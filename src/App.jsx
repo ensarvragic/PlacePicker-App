@@ -120,7 +120,7 @@ function App() {
       </header>
       <main>
         {error && <Error title="An error occurred!" message={error.message} />}
-        {error && (
+        {!error && (
           <Places
             title="I'd like to visit ..."
             fallbackText="Select the places you would like to visit below."
